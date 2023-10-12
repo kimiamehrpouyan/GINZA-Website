@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&family=Coming+Soon&family=Lato&family=Lora:wght@600&family=Metal+Mania&family=Poppins:wght@100;400&family=Roboto&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=VT323&family=Volkhov&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caudex&family=Coming+Soon&family=Lato&family=Lora:wght@600&family=Metal+Mania&family=Poppins:wght@100;400&family=Roboto&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=VT323&family=Volkhov&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caudex", sans-serif;
+  overflow-x: hidden;
+}
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+
+
+
+.visibility{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.opacity-hidden{
+    opacity: 0;
+}
+.opacity-visible{
+    opacity: 1;
+}
+.displaynone{
+  display: none;
+}
+.translateX{
+  transform: translateX(400px);
+}
+.translate-X{
+  transform: translateX(-400px);
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .header-container{
+        .header-BG{
+            max-width: 100%;
+            max-height: 95vh;
+            min-height: 10vh;
+            transform: translateX(0px) translateY(0px);
+        }
+        .open-menu {
+                  visibility: visible;
+                  // display: block;
+                }
+                .nav {
+                  visibility: hidden;
+                }
+                .logo {
+                  top: 25px;
+                  left: 20px;
+                  font-size: 30px;
+                }
+                .header-text {
+                  top: 20%;
+                  left: 30%;
+                  font-size: 3rem;
+                  max-width: 400px;
+                }
+                .icons {
+                  top: 50%;
+                  left: 42%;
+                }
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 980px) {
+  
+  .memories {
+    .memories-img {
+      img {
+        width: 450px;
+      }
+    }
+  }
+  .kids {
+    .kids-img {
+      img {
+        width: 450px;
+      }
+    }
+  }
+  .chef {
+    .chef-img {
+      img {
+        width: 400px;
+      }
+    }
+  }
+  .dog {
+    .dog-img {
+      img {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .memories {
+    flex-direction: column;
+    gap: 30px;
+    .memories-img {
+      img {
+        width: 400px;
+      }
+    }
+    .memories-text {
+      width: 400px;
+      .memories-text-title {
+        font-size: 2rem;
+        width: 250px;
+      }
+    }
+  }
+  .slider {
+    max-width: 100%;
+    height: 110vh;
+    gap: 40px;
+    .slider-title {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+    .slider-cards {
+      i{
+        visibility: hidden;
+      }
+      flex-direction: column;
+      .card {
+        margin: 20px 0 20px 0;
+        .card-title,
+        .card-description {
+          margin-top: 5px;
+        }
+        .card-img {
+          width: 400px;
+        }
+      }
+    }
+  }
+  .kids {
+    flex-direction: column;
+    gap: 30px;
+    .kids-img {
+      img {
+        width: 400px;
+      }
+    }
+    .kids-text {
+        gap: 20px;
+      width: 400px;
+      .kids-text-title {
+        font-size: 2rem;
+        width: 320px;
+      }
+    }
+  }
+  .chef {
+    height: 130vh;
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+    .chef-img {
+      position: absolute;
+      top: 250px;
+      img {
+        width: 400px;
+      }
+    }
+    .chef-text {
+      position: absolute;
+      top: 20px;
+      width: 400px;
+      gap: 30px;
+      .chef-text-title {
+        font-size: 2rem;
+        width: 450px;
+      }
+    }
+  }
+
+  .dog {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+    .dog-img {
+      img {
+        width: 400px;
+      }
+    }
+    .dog-text {
+      width: 400px;
+      gap: 30px;
+      .dog-text-title {
+        font-size: 2rem;
+        width: 330px;
+      }
+    }
+  }
+  .book {
+    gap: 30px;
+    height: 60vh;
+    .book-title {
+      font-size: 2.5rem;
+    }
+    .book-descriptin {
+      font-size: 16px;
+      width: 340px;
+    }
+  }
+  .footer {
+    height: 140vh;
+    flex-direction: column;
+    gap: 40px;
+    .footer-items-left {
+      width: 100%;
+      gap: 28px;
+      .footer-logo {
+        font-size: 40px;
+      }
+      .footer-icons {
+        color: #ffffff;
+        font-size: 22px;
+      }
+    }
+    .footer-items-right {
+      padding-left: 0px;
+      width: 100%;
+      flex-direction: column;
+      gap: 50px;
+      div {
+        h2 {
+          font-size: 28px;
+          margin-bottom: 14px;
+        }
+        h4 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .login{
+    margin-top: 0px;
+    height: 60vh;
+    gap: 10px;
+    h2{
+      font-size: 1.5rem;
+    }
+    i{
+      margin: 0px;
+    }
+    div{
+      gap: 5px;
+      label{
+        font-size: 14px;
+      }
+      input{
+        font-size: 12px;
+      }
+    }
+  }
+  
+}
+@media only screen and (max-width: 670px) and (min-width: 300px){
+    .header-container{
+                .header-text {
+                    font-size: 28px;
+                  top: 18%;
+                  left: 20%;
+                }
+                .icons {
+                  top: 32%;
+                  left: 34%;
+                }
+    }
+}
